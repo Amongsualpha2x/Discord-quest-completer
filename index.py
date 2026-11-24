@@ -6,7 +6,7 @@ import tempfile
 import shutil
 import subprocess
 
-def where_winds_meet():
+def create_window():
     if getattr(sys, "frozen", False):
         source = os.path.join(sys._MEIPASS, "create.exe")
     else:
@@ -24,5 +24,6 @@ game = tk.StringVar(value="")
 frame = ttk.Frame(root, padding=10, width=800, height=600)
 frame.grid()
 ttk.Label(frame, text="Discord quest completer", font=("comic sans ms", 28)).grid(column=0, row=0)
-ttk.Button(frame, text="where winds meet", command=lambda:(game.set("wwm.exe"), where_winds_meet(), print(game.get())), width=100).grid(column=0, row=1)
+ttk.Button(frame, text="where winds meet", command=lambda:(game.set("wwm.exe"), create_window(), print(game.get())), width=100).grid(column=0, row=1)
+ttk.Button(frame, text="eve online", command=lambda:(game.set("exefile.exe"), create_window(), print(game.get())), width=100).grid(column=0, row=2)
 root.mainloop()
