@@ -28,4 +28,5 @@ ttk.Button(frame, text="where winds meet", command=lambda:(game.set("wwm.exe"), 
 ttk.Button(frame, text="eve online", command=lambda:(game.set("exefile.exe"), create_window(), print(game.get())), width=100).grid(column=0, row=2)
 ttk.Button(frame, text="Arknights: Endfield", command=lambda:(game.set("endfield.exe"), create_window(), print(game.get())), width=100).grid(column=0, row=3)
 ttk.Button(frame, text="Roblox", command=lambda:(game.set("RobloxPlayerBeta.exe"), create_window(), print(game.get())), width=100).grid(column=0, row=4)
+ttk.Button(frame, text="Arkheron", command=lambda:(game.set("arkheron.exe"), create_window(), print(game.get())), width=100).grid(column=0, row=5)
 root.mainloop()
